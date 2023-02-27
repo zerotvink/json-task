@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "module": "CommonJS",
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "moduleResolution": "Node",
+    "baseUrl": "src",
+    "outDir": "build",
+    "strict": true,
+    "experimentalDecorators": true,
+    "paths": {
+      "configuration": ["configuration"],
+      "constants": ["constants"],
+      "controllers": ["controllers"],
+      "core": ["core"],
+      "database": ["database"],
+      "interfaces": ["interfaces"],
+      "libs": ["libs"],
+      "middlewares": ["middlewares"],
+      "routers": ["routers"],
+      "servers": ["servers"],
+      "types": ["types"],
+      "utils": ["utils"]
+    }
+  },
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+  },
+  "include": ["src"],
+  "exclude": ["build/*", "node_modules"]
+}
